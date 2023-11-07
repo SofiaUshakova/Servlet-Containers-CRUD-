@@ -8,8 +8,10 @@ import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
+import org.springframework.stereotype.Repository;
 
 // Stub
+@Repository
 public class PostRepository {
     private final AtomicLong postId = new AtomicLong();
     private final ConcurrentHashMap<Long, Post> posts = new ConcurrentHashMap<>();
